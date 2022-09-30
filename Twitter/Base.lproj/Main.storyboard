@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="hSB-vw-2wG">
             <objects>
-                <viewController id="fay-qh-F3R" sceneMemberID="viewController">
+                <viewController id="fay-qh-F3R" customClass="LoginViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dgo-lN-H9k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +30,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLoginButton:" destination="fay-qh-F3R" eventType="touchUpInside" id="9PW-yH-a6g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vzm-0H-b7A"/>
@@ -47,12 +50,12 @@
             </objects>
             <point key="canvasLocation" x="240.80000000000001" y="-188.45577211394306"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="aIU-cb-Xgv">
             <objects>
                 <tableViewController id="357-Ey-sIt" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1kY-6o-ICN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -70,7 +73,7 @@
                             <outlet property="delegate" destination="357-Ey-sIt" id="hkK-9Q-zVa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="RBx-Wl-nOy"/>
+                    <navigationItem key="navigationItem" title="Home" id="RBx-Wl-nOy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezo-f8-Qeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,9 +82,9 @@
         <!--Navigation Controller-->
         <scene sceneID="LvH-6q-cLq">
             <objects>
-                <navigationController id="F1B-0P-YIM" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="F1B-0P-YIM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J2X-xu-xuv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
