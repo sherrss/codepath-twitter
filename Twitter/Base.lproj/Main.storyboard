@@ -53,7 +53,7 @@
         <!--Home-->
         <scene sceneID="aIU-cb-Xgv">
             <objects>
-                <tableViewController id="357-Ey-sIt" sceneMemberID="viewController">
+                <tableViewController id="357-Ey-sIt" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1kY-6o-ICN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,13 @@
                             <outlet property="delegate" destination="357-Ey-sIt" id="hkK-9Q-zVa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="RBx-Wl-nOy"/>
+                    <navigationItem key="navigationItem" title="Home" id="RBx-Wl-nOy">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Hzl-MW-OAU">
+                            <connections>
+                                <action selector="onLogout:" destination="357-Ey-sIt" id="13F-2j-Czp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezo-f8-Qeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,6 +92,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J2X-xu-xuv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.32646877190000001" green="0.77233099510000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="357-Ey-sIt" kind="relationship" relationship="rootViewController" id="UYp-yW-ol3"/>
