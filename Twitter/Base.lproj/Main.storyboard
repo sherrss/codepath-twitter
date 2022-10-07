@@ -91,19 +91,27 @@
                                                 <constraint firstAttribute="height" constant="30" id="eBA-l0-HmE"/>
                                                 <constraint firstAttribute="width" constant="30" id="lI5-Qg-wBq"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="favor-icon"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button" image="favor-icon"/>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWw-hI-ND8" userLabel="retweetButton">
-                                            <rect key="frame" x="236" y="93" width="54" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="retweet-icon"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWw-hI-ND8" userLabel="retweetButton">
+                                            <rect key="frame" x="279" y="99" width="30" height="30"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                            </accessibility>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="OqV-jL-UgE"/>
+                                                <constraint firstAttribute="height" constant="30" id="aV5-7i-ict"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button" image="retweet-icon"/>
                                         </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="J34-AE-1cm" firstAttribute="top" secondItem="iF4-iL-NHD" secondAttribute="top" id="F6N-bK-alX"/>
                                         <constraint firstItem="vF5-an-8Mq" firstAttribute="top" secondItem="G1h-md-aXY" secondAttribute="bottom" constant="4" id="JW5-dw-oHe"/>
+                                        <constraint firstItem="u0t-zm-4bb" firstAttribute="leading" secondItem="IWw-hI-ND8" secondAttribute="trailing" constant="10" id="L0d-Xc-yac"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IWw-hI-ND8" secondAttribute="bottom" constant="10" id="ORs-qX-Nq6"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="u0t-zm-4bb" secondAttribute="bottom" constant="10" id="ROc-UM-ifz"/>
                                         <constraint firstItem="G1h-md-aXY" firstAttribute="top" secondItem="iF4-iL-NHD" secondAttribute="topMargin" id="bgc-Ds-Su5"/>
                                         <constraint firstItem="vF5-an-8Mq" firstAttribute="leading" secondItem="J34-AE-1cm" secondAttribute="trailing" constant="8" id="etQ-he-3ua"/>
